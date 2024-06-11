@@ -2,11 +2,11 @@ name: CI / CD Pipeline
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build-and-test:
+    name: Executando o job de teste
     runs-on: ubuntu-latest
 
     steps:
